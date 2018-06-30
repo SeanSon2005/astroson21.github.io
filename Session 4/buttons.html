@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Buttons</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Lobster|Monoton|Permanent+Marker" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <button class="btn btn-primary">SPAM PLZ</button>
+        <button id = "hi"class="btn btn-info" onclick="HI()">CLick me or else</button>
+        <div>
+            <button class="btn btn-warning btn-lg">Im fat</button>
+            <button class="btn btn-primary btn-sm">Im tiny</button>
+        </div>
+        <div>
+            <h1>State of button</h1>
+            <button class = "btn btn-primary" onlcick = "undo()">undisable the other one :)</button>
+            <button id="woo"class = "btn btn-primary disabled">TRY HARDER</button>
+
+        </div>
+    </div>
+    <script>
+        function HI(){
+            document.getElementById("hi").style.display = "none";
+
+        }
+        function undo(){
+            document.getElementById("woo").removeClass("disabled");
+        }
+    </script>
+</body>
+</html>

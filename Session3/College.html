@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Future College</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Lobster|Monoton|Permanent+Marker" rel="stylesheet">
+
+    <style>
+        .cool{
+            margin:30px 30px 20px 30px;
+            color:blue;
+             padding: 20px 20px ; 
+            border: double 20px rebeccapurple;
+            font-family: Anton;
+
+      
+        }
+    </style>
+</head>
+
+<body id="back">
+    <h1 id = "collhead"style="font-size: 350%; font-family:Permanent Marker">Hey... Type <b>password</b></h1>
+
+
+    <div style="margin:20px 20px" id = "hi">
+        <input type="text" id="myText" placeholder="password" onkeypress="readit(event)">
+    <button onclick="myFunction()">Enter</button>
+    <button onclick="bruh()">I'll Pass ;)</button>   
+    </div>
+    <div id="myDIV">
+        <p class="bg-primary text-white" style="font-size: 200%">Hello! Today I'm gonna tell you what college I want to go to!</p>
+        <img style = "border: solid 3px blue; background-color: coral; padding: 20px 20px; margin-left: 20px"  src="thinking.jpg" class="float-left">
+        <p class="text-dark" style="font-size:190%; margin-left: 350px; font-family:Indie Flower">I'm not saying that I'm 100% sure I'll go to this college, but let's face it. Everyone wants to go to a good college. Or their parents want them to... The college I chose is really good, but this college has a great opening for coding! "cause it's a good College in general"... So, I CHOOSE YOU...</p>
+        <h1 class="alert alert-info container text-center" style="font-family: Lobster; margin-top:-2px ; margin-left: 350px">UC Berkley!</h1>
+        <img style = "width:100%"src = "ucberkley.jpg">
+        <h1 class="cool">How Will I get into UC Berkley?</h1>
+        <img class="float-left" style = "border: solid 3px blue; background-color: coral; padding: 20px 20px; width:14%; margin: 0px 20px 20px 20px"  src="NATCAR.jpg" class="float-left">
+        <p class="text-danger " style = "font-family:Permanent Marker;  font-size: 170%; margin: 0px 30px 20px 300px" >Since I'm going to 8th grade, I do not think that I need to focus on this... but I think I'll try to win in a coding competition or a competition like NatCar. That will help my entertrance probably with a scholarship. If that doesn't work, I will just try to make use of whatever high school I go to and then make a club. With that club of some sort, I will enter a competition (with my teammates) and try to win for some college credit. So, in general, how to get in college? Get known. Get scholarships. Get money.</p>
+        <h1 class="cool">What Majors will I do?</h1>
+        <table class="table table-bordered table-dark table-hover">
+            <tr>
+                <th>
+                    MAJORS
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    Computer Coding
+                </td>
+                <td>
+                    Mechanical engineering
+                </td>
+                <td>
+                    Electrical engineering
+                </td>
+
+            </tr>
+        </table>
+        <h1 class="cool">How Will I fund the college?</h1>
+        <p style="font-size:130%">This is an unecessary question, but I'll answer it anyways. My parents are going to try to fund me cause thats what everyone literally does... ;)</p>
+
+
+    </div>
+   
+    <script>
+            var d = document.getElementById("myDIV");
+            d.style.display = "none";
+        </script>
+
+    <p id="demo"></p>
+        <script>
+            function readit(event){
+                var g = event.keyCode;
+                if(g == 13){
+                   
+                    myFunction();
+                }
+            }
+        
+        
+        </script>
+    <script>
+        
+        function bruh(){
+            alert("Dude. DONT EVEN");
+        }
+        function myFunction() {
+            var x = document.getElementById("myText").value;
+            var f = document.getElementById("hi");
+            var backgcolor = document.getElementById("back");
+
+            var p = document.getElementById("myDIV");
+            if(x == "password"){
+                f.style.display = "none";
+                backgcolor.style.backgroundColor = "yellowgreen";
+                document.getElementById("demo").style.display = "none";
+                document.getElementById("collhead").innerHTML = "COLLEGE TIME!";
+                p.style.display = "block";
+                
+
+
+            }
+            else{
+       
+                alert("STOP TRYING. OK?");
+                document.getElementById("demo").innerHTML = "Ha no ACCESS!!!";
+            }
+            
+        }
+    </script>
+
+
+</body>
+
+</html>
