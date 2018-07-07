@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rev</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome!</h1>
+        <h1 id="display"></h1>
+        <button class="btn btn-primary" onclick="alert('Hello')">Say Hi to me for no reason :D</button>
+        <button class="btn btn-warning" onclick="stuff(1)">Show me an alert</button>
+        <button class="btn btn-success" onclick="stuff(2)">Click for Name</button>
+        <button class="btn btn-dark text-white" onclick="stuff(3)">Change stuff</button>
+    </div>
+
+    <script>
+        function stuff(wut){
+            if(wut == 1){
+                document.getElementById("display").innerHTML="ALERT OMG ALERT OMG ALERT ALERT!!";
+                 alert("Hello, Sean S");
+            }
+            else if(wut == 2){
+                document.getElementById("display").innerHTML="Hello, Sean Son";
+            }
+
+            else if(wut == 3){
+               var oof = Math.floor((Math.random() * 100) + 1);
+               hi = (oof).toString();
+
+                document.getElementById("display").innerHTML=hi;
+            }
+           
+        }
+    </script>
+
+
+
+</body>
+</html>

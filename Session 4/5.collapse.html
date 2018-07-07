@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,21 +17,59 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
-    
+
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Anton|Lobster|Monoton|Permanent+Marker" rel="stylesheet">
 </head>
+
 <body>
     <div class="container">
         <div>
             <h1>Basic Collapsible</h1>
             <button class="btn btn-primary" data-toggle="collapse" data-target="#demo">CLICKY MMEEEEEE PLEZ</button>
             <div id="demo" class="collapse">
-                Enim consequat nisi est Lorem occaecat amet minim est. Ut cupidatat officia duis proident fugiat cupidatat minim sint. Labore laborum esse sit quis consequat et fugiat minim elit ad non. Consequat ipsum incididunt anim amet minim anim. Eu pariatur ex velit ea culpa nulla est quis irure aliqua aliquip non.
+                Enim consequat nisi est Lorem occaecat amet minim est. Ut cupidatat officia duis proident fugiat cupidatat minim sint. Labore
+                laborum esse sit quis consequat et fugiat minim elit ad non. Consequat ipsum incididunt anim amet minim anim.
+                Eu pariatur ex velit ea culpa nulla est quis irure aliqua aliquip non.
             </div>
 
 
         </div>
+        <div id="accordion">
+                <h1>Accordion</h1>
+                <div class="card">
+                    
+                        <a class="card-link" data-toggle="collapse" data-target="#collapseOne">
+                            <div class="card-header">
+                                Group Item 1
+                            </div>
+                        </a>
+                    
+    
+                    <div id="collapseOne" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                Nulla duis proident exercitation proident duis sit mollit labore excepteur anim cillum tempor deserunt laboris.
+                            </div>
+                    </div>
+                </div>
+                <div class="card">
+                    
+                        <a class="card-link" data-toggle="collapse" data-target="#collapseTwo">
+                            <div class="card-header">
+                                Group Item 1
+                            </div>
+                        </a>
+                    
+    
+                    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                Nulla duis proident exercitation proident duis sit mollit labore excepteur anim cillum tempor deserunt laboris.
+                            </div>
+                    </div>
+                </div>
+            </div>
+            
     </div>
 </body>
+
 </html>
